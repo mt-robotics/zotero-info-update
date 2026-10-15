@@ -75,7 +75,8 @@ class ZoteroInfoUpdate:
         self.config = cfg
         self.db_path = self.config.get("db_path")
         self.new_date_added = self.config.get("new_date_added")
-        self.title_name = self.config.get("title_name")
+        # self.title_name = self.config.get("title_name")
+        self.title_name = input("Enter the title name: ")
 
     def connect_to_db(self):
         """Establish a connection to the SQLite database."""

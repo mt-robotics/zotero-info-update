@@ -52,14 +52,15 @@ if __name__ == "__main__":
             "Fetching item ID for title: %s", zotero_update_date_added.title_name
         )
         itemId = zotero_update_date_added.get_item_id(conn)
+        print(f"Item ID of {zotero_update_date_added.title_name} is {itemId}.")
 
         # my_logger.debug("Querying database for title...")
         # itemId = zotero_update_date_added.get_item_id(conn)
         # my_logger.debug("Item ID: %s", itemId)
 
-        # Update date added
-        zotero_update_date_added.update_date_added(conn)
-        my_logger.info("Date added updated successfully.")
+        # # Update date added
+        # zotero_update_date_added.update_date_added(conn)
+        # my_logger.info("Date added updated successfully.")
 
     except Exception as e:
         my_logger.error("An unexpected error occurred: %s", str(e), exc_info=True)

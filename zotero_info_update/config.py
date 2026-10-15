@@ -54,5 +54,5 @@ DB_PATH = os.getenv("DB_PATH")
 config = {
     "db_path": DB_PATH,
     "new_date_added": NEW_DATE_ADDED,
-    "title_name": TITLE_NAME,
+    # "title_name": TITLE_NAME,
 }
